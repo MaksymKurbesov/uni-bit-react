@@ -1,0 +1,82 @@
+.section-title {
+    position: relative;
+    height: 135px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    color: var(--main-orange);
+}
+
+.white {
+    color: white;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5);
+}
+
+.black {
+    color: black;
+    -webkit-text-stroke: 1px rgba(237, 103, 52, 0.8);
+}
+
+.small {
+    position: absolute;
+    top: 40px;
+    left: 120px;
+    font-size: 60px;
+}
+
+.big {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 110px;
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(237, 103, 52, 0.4);
+}
+
+.our-client-custom {
+    margin-bottom: -60px;
+}
+
+.who-we-are-custom {
+    top: 120px;
+    margin-bottom: -50px;
+}
+
+.contacts-title {
+    margin-bottom: 25px;
+}
+
+@media screen and (max-width: 1000px) {
+    .small {
+        font-size: 40px;
+    }
+
+    .big {
+        font-size: 80px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .our-client-custom {
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .section-title {
+        height: 80px;
+        margin-bottom: 20px;
+    }
+
+    .small {
+        font-size: 20px;
+    }
+
+    .big {
+        font-size: 55px;
+    }
+
+    /*.contacts-title {*/
+    /*    margin-bottom: 0;*/
+    /*}*/
+
+}

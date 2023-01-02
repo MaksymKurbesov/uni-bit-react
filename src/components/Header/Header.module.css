@@ -1,0 +1,134 @@
+header {
+    padding: 15px 0;
+}
+
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    margin-left: auto;
+    margin-right: 70px;
+}
+
+.nav-list {
+    display: flex;
+    text-transform: uppercase;
+    color: #C90C0F;
+}
+
+.nav-list li:not(:last-child) {
+    margin-right: 50px;
+}
+
+.contact-button {
+    background: #C90C0F;
+    outline: none;
+    border: 1px solid var(--main-orange);
+    height: 50px;
+    padding: 0 20px;
+    font-weight: 600;
+    color: white;
+}
+
+.menu-button-container {
+    position: relative;
+}
+
+.checkbox {
+    display: none;
+}
+
+.hamburger-lines {
+    display: block;
+    height: 26px;
+    width: 32px;
+    /*position: absolute;*/
+    /*top: 17px;*/
+    /*left: 20px;*/
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.hamburger-lines .line {
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    background: #0e2431;
+}
+
+.hamburger-lines .line1 {
+    transform-origin: 0% 0%;
+    transition: transform 0.4s ease-in-out;
+}
+
+.hamburger-lines .line2 {
+    transition: transform 0.2s ease-in-out;
+}
+
+.hamburger-lines .line3 {
+    transform-origin: 0% 100%;
+    transition: transform 0.4s ease-in-out;
+}
+
+
+input[type="checkbox"]:checked ~ .menu-items {
+    transform: translateX(0);
+}
+
+input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+    transform: rotate(45deg);
+}
+
+input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+    transform: scaleY(0);
+}
+
+input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+    transform: rotate(-45deg);
+}
+
+.mobile-menu {
+    display: none;
+}
+
+@media screen and (max-width: 1000px) {
+    .nav-list li:not(:last-child) {
+        margin-right: 15px;
+    }
+
+    nav {
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .desktop-menu {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 10px 0 auto;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .logotype {
+        width: 150px;
+    }
+
+    .mobile-menu {
+        margin: 0 10px;
+    }
+}

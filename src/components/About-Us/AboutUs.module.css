@@ -1,0 +1,135 @@
+.about-us {
+    background-image: url("../../assets/images/about-us-bg.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    /*background-size: cover;*/
+    background-size: 100% 500px;
+    /*min-height: 585px;*/
+    margin-bottom: 200px;
+    padding: 20px 100px;
+}
+
+.about-us h3 {
+    text-transform: uppercase;
+    color: white;
+    position: relative;
+    font-size: 30px;
+    margin: 0 auto 40px;
+    max-width: 300px;
+    text-align: center;
+}
+
+.about-us h3::before {
+    content: '';
+    width: 300px;
+    height: 3px;
+    background: white;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -350px;
+}
+
+.about-us h3::after {
+    content: '';
+    width: 300px;
+    height: 3px;
+    background: white;
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    right: -350px;
+}
+
+.feature-list {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    position: relative;
+    top: 100px;
+}
+
+.feature-list div {
+    border: 2px solid #FA620C;
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*flex-basis: 100%;*/
+}
+
+.feature-list div:nth-child(2) {
+    margin-top: 100px;
+}
+
+@media screen and (max-width: 1500px) {
+    .about-us {
+        padding: 20px 30px;
+    }
+
+    .about-us h3::after {
+        width: 150px;
+        right: -150px;
+    }
+
+    .about-us h3::before {
+        width: 150px;
+        left: -150px;
+    }
+
+    .feature-list {
+        gap: 5px;
+    }
+
+    .feature-list div {
+        height: 300px;
+        width: 300px;
+    }
+
+
+    /*.about-us {*/
+    /*    margin-bottom: 0;*/
+    /*}*/
+}
+
+@media screen and (max-width: 1000px) {
+    .about-us {
+        margin-bottom: 0;
+    }
+
+    .feature-list {
+        flex-direction: column;
+        align-items: center;
+        top: 0;
+    }
+
+    .feature-list div {
+        margin-bottom: 30px;
+    }
+    .feature-list div:nth-child(2) {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .about-us {
+        background-image: none;
+    }
+
+    .about-us h3 {
+        color: var(--main-orange);
+    }
+
+    .about-us h3::after {
+        width: 0;
+        height: 0;
+    }
+
+    .about-us h3::before {
+        width: 0;
+        height: 0;
+    }
+}

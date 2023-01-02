@@ -1,0 +1,79 @@
+.our-clients {
+    /*width: 90%;*/
+    margin: 0 auto 100px;
+    background: var(--white);
+}
+
+.our-clients-wrapper {
+    padding: 75px 0;
+}
+
+.slide {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid rgba(0, 0, 0, 0.5);
+    height: 250px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.prev-button {
+    margin-right: 2px;
+}
+
+
+.prev-button::before, .next-button::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+}
+
+.prev-button::before {
+    background-image: url('../../assets/images/icon-return-arrow.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.next-button::before {
+    background-image: url('../../assets/images/icon-return-arrow.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotate(180deg)  translate(50%, 50%);
+}
+
+.prev-button, .next-button {
+    background: none;
+    padding: 20px;
+    width: 75px;
+    height: 75px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-bottom: none;
+    position: relative;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.prev-button:hover, .next-button:hover {
+    background: var(--main-orange);
+}
+
+
+@media screen and (max-width: 700px) {
+    .our-clients {
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .our-clients-wrapper {
+        padding: 25px 0;
+    }
+}

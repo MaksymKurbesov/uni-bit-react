@@ -1,0 +1,138 @@
+.which-services {
+    background: #f5f5f5;
+    /*width: 90%;*/
+    margin: 0 auto;
+    padding: 75px 0;
+}
+
+.service-link {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.service-link h3 {
+    text-transform: uppercase;
+    /*position: relative;*/
+}
+
+.service-link h3::before {
+    content: '';
+    position: absolute;
+    top: 120px;
+    left: 0;
+    width: 350px;
+    height: 3px;
+    background: var(--main-orange);
+}
+
+.service-link h3::after {
+    content: '';
+    position: absolute;
+    top: 140px;
+    left: 0;
+    width: 250px;
+    height: 3px;
+    background: var(--main-orange);
+}
+
+.service-link img {
+    margin-right: 40px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.services-list {
+    display: grid;
+}
+
+.services-list li {
+    background-color: #1e1e1e;
+    position: relative;
+    /*width: 100%;*/
+}
+
+.services-list li:not(:last-child) {
+    margin-bottom: 50px;
+}
+
+.services-list li:nth-child(odd) img {
+    order: 2;
+}
+
+.services-list li:nth-child(even) h3::before{
+    right: 0;
+    left: auto;
+}
+
+.services-list li:nth-child(even) h3::after {
+    right: 0;
+    left: auto;
+}
+
+.services-list li svg {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.description {
+    height: 100%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    line-height: 1.4;
+    color: var(--main-orange);
+}
+
+
+.description h3 {
+    margin-bottom: 70px;
+    font-size: 40px;
+}
+
+.description p {
+    font-weight: 400;
+    font-size: 18px;
+    color: white;
+}
+
+@media screen and (max-width: 950px) {
+    .service-link h3::before, .service-link h3::after {
+        display: none;
+    }
+
+    .service-link {
+        grid-template-columns: 100%;
+    }
+
+    .service-link img {
+        margin-right: 0;
+    }
+
+    .services-list li:nth-child(odd) img {
+        order: initial;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .services-list {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .which-services {
+        padding: 50px 0 25px 0;
+    }
+
+    .description {
+        width: 100%;
+        padding: 50px 25px;
+    }
+
+    .description h3 {
+        margin-bottom: 20px;
+    }
+}
