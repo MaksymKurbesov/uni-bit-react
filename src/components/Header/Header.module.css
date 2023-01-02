@@ -1,4 +1,9 @@
 header {
+    position: sticky;
+    /*position: fixed;*/
+    top: 0;
+    z-index: 99;
+    background-color: white;
     padding: 15px 0;
 }
 
@@ -18,6 +23,30 @@ nav {
     display: flex;
     text-transform: uppercase;
     color: #C90C0F;
+}
+
+.nav-list-mobile {
+    position: absolute;
+    top: 108px;
+    left: 0;
+    width: 100vw;
+    background-color: white;
+    font-size: 60px;
+    padding: 50px;
+    display: block;
+    z-index: 99;
+    transition: 0.5s;
+    transform: translateY(-700px);
+}
+
+.nav-list-mobile li {
+    border-bottom: 2px solid var(--main-orange);
+    padding-bottom: 10px;
+    color: var(--main-orange);
+}
+
+.nav-list-mobile li:not(:last-child) {
+    margin-bottom: 40px;
 }
 
 .nav-list li:not(:last-child) {
@@ -40,6 +69,10 @@ nav {
 
 .checkbox {
     display: none;
+}
+
+.active {
+    transform: translateY(0);
 }
 
 .hamburger-lines {
@@ -95,9 +128,10 @@ input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
     transform: rotate(-45deg);
 }
 
-.mobile-menu {
-    display: none;
-}
+/*input[type="checkbox"]:checked .nav-list-mobile {*/
+/*    display: block;*/
+/*}*/
+
 
 @media screen and (max-width: 1000px) {
     .nav-list li:not(:last-child) {
