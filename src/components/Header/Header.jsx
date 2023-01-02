@@ -6,12 +6,15 @@ const Header = () => {
     <header>
       <div className={"container"}>
         <div className={style["header-wrapper"]}>
-          <img
-            className={style["logotype"]}
-            src={Logo}
-            width={250}
-            alt={"logotype"}
-          />
+          <a href={"/#"}>
+            <img
+              className={style["logotype"]}
+              src={Logo}
+              width={250}
+              alt={"logotype"}
+            />
+          </a>
+
           <nav className={style["mobile-menu"]}>
             <label className={style["menu-button-container"]}>
               <input className={style["checkbox"]} type="checkbox" />

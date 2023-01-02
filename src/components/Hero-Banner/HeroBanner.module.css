@@ -79,6 +79,8 @@
     right: 100px;
 }
 
+.hero-text
+
 @media screen and (max-width: 1000px) {
     .hero-text h2 {
         font-size: 60px;
@@ -87,7 +89,7 @@
 
 @media screen and (max-width: 800px) {
     .hero-image, .hero-banner {
-        min-height: 450px;
+        min-height: 500px;
     }
 
     .hero-text {
@@ -101,10 +103,6 @@
 }
 
 @media screen and (max-width: 570px) {
-    .hero-image, .hero-banner {
-        min-height: 400px;
-    }
-
     .hero-text {
         left: 30px;
     }

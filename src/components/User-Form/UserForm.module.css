@@ -18,8 +18,9 @@
 
 .user-form-wrapper h2 {
     text-transform: uppercase;
-    margin-bottom: 20px;
     font-size: 32px;
+    width: 70%;
+    margin: 0 auto 20px;
 }
 
 .user-form-wrapper p {
@@ -86,6 +87,7 @@
 @media screen and (max-width: 500px) {
     .user-form-wrapper h2 {
         font-size: 24px;
+        width: 100%;
     }
 
     .user-form-wrapper form {

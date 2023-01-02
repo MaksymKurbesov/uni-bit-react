@@ -11,10 +11,14 @@ const HeroBanner = () => {
           and art studio
         </h2>
         <p>
-          Uni-Bit Studio - is a solid, reliable company organized by experienced
-          professionals and specialists, who been developing mobile games,
-          applications and supplying qualified specialists to other studios and
-          businesses professionally for over 9 years.
+          Your personal full-cycle game development team leveraging 10+ years of
+          experience and providing top-level artists and developers on board. We
+          nurture an individual approach to every client and try to deliver
+          exceptional services meeting all needs and modern game industry
+          trends. The Uni-Bit team is well-versed with projects of any scale and
+          complexity, as we have a diverse tech stack in the team. Our team
+          members have a prior track record at Unity, so they can create art
+          solutions no other company in the market will.
         </p>
       </div>
 
